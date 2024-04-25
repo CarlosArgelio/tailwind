@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./output.css" rel="stylesheet" />
+
+    <title>Document</title>
+  </head>
+  <body class="bg-blue-400">
+    <form action="" class="bg-white w-80 mx-auto mt-8 rounded-lg p-6">
+      <input
+        class="border border-gray-300 w-full px-3 py2 mb-4 rounded-md disabled:bg-red-200"
+        type="text"
+        placeholder="Nombre"
+        disabled
+      />
+
+      <input
+        class="border border-gray-300 w-full px-3 py2 mb-4 rounded-md focus:outline-none focus:ring-1 focus:ring-purple-600 disabled:shadow-none invalid:border-pink-500 invalid:text-pink-600 focus:invalid:border-pink-500 focus:invalid:ring-pink-500 peer"
+        type="email"
+        placeholder="Email"
+      />
+      <p class="text-red-400 hidden peer-invalid:block">
+        El correo es incorrecto
+      </p>
+      <input
+        class="border border-gray-300 w-full px-3 py2 mb-4 mt-4 rounded-md"
+        type="password"
+        placeholder="Contrasena"
+      />
+
+      <input
+        class="bg-blue-500 w-full py-2 text-white rounded-md cursor-pointer hover:bg-blue-400"
+        type="submit"
+        value="Ingresar"
+      />
+    </form>
+  </body>
+</html>
