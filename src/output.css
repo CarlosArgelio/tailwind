@@ -640,12 +640,12 @@ video {
   height: 100px;
 }
 
-.h-full {
-  height: 100%;
-}
-
 .h-\[100vh\] {
   height: 100vh;
+}
+
+.h-full {
+  height: 100%;
 }
 
 .w-24 {
@@ -1100,6 +1100,16 @@ video {
 
 .peer:invalid ~ .peer-invalid\:block {
   display: block;
+}
+
+.dark\:bg-slate-900:is(.dark *) {
+  --tw-bg-opacity: 1;
+  background-color: rgb(15 23 42 / var(--tw-bg-opacity));
+}
+
+.dark\:text-white:is(.dark *) {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 @media (min-width: 640px) {
